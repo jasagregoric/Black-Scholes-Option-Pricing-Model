@@ -10,7 +10,7 @@ The application allows users to explore option prices, visualize price sensitivi
 
 Try the live application here:
 
-[🚀 Black-Scholes Option Pricing Model]([https://your-streamlit-link.streamlit.app/](https://option-pricing-black-scholes-model.streamlit.app/)
+[Black-Scholes Option Pricing Model]([https://your-streamlit-link.streamlit.app/](https://option-pricing-black-scholes-model.streamlit.app/)
 
 ---
 
@@ -120,7 +120,7 @@ $$
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Python
 - Streamlit
@@ -131,7 +131,7 @@ $$
 
 ---
 
-## 📦 Installation
+## Installation
 
 Clone the repository:
 
