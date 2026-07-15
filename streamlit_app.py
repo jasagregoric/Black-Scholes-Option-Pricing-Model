@@ -159,7 +159,7 @@ with st.sidebar:
 
     st.markdown("---")
 
-    st.subheader("🔥 Heatmap Settings")
+    st.subheader("Heatmap Settings")
 
     spot_min = st.number_input(
         "Minimum Stock Price",
@@ -191,7 +191,7 @@ with st.sidebar:
         step=0.01
     )
 
-    st.markdown("#### 📐 Heatmap Resolution")
+    st.markdown("#### Heatmap Resolution")
 
     col1, col2 = st.columns(2)
 
@@ -218,7 +218,7 @@ with st.sidebar:
     st.markdown("---")
 
     calculate_btn = st.button(
-        "🚀 Generate Heatmap",
+        "Generate Heatmap",
         use_container_width=True
     )
 
@@ -331,7 +331,7 @@ with col1:
         color:white;
     ">
         <div style="font-size:18px; font-weight:600;">
-            📈 CALL
+            CALL
         </div>
         <div style="font-size:28px; font-weight:bold; margin-top:4px;">
             ${call_price:.2f}
@@ -349,7 +349,7 @@ with col2:
         color:white;
     ">
         <div style="font-size:18px; font-weight:600;">
-            📉 PUT
+            PUT
         </div>
         <div style="font-size:28px; font-weight:bold; margin-top:4px;">
             ${put_price:.2f}
@@ -380,11 +380,11 @@ fig_call, fig_put = plot_heatmap(
 col1, col2 = st.columns([1,1])
 
 with col1:
-    st.subheader("📈 CALL")
+    st.subheader("CALL")
     st.pyplot(fig_call, width="stretch")
 
 with col2:
-    st.subheader("📉 PUT")
+    st.subheader("PUT")
     st.pyplot(fig_put, width="stretch")
 
 def plot_price_curve(bs_model, min_price, max_price):
@@ -449,7 +449,7 @@ def plot_price_curve(bs_model, min_price, max_price):
 
 st.markdown("---")
 
-st.subheader("📈 Option Price vs Stock Price")
+st.subheader("Option Price vs Stock Price")
 
 price_curve = plot_price_curve(
     bs_model,
@@ -557,7 +557,7 @@ def plot_greeks_vs_stock(bs_model, min_price, max_price):
 
 st.markdown("---")
 
-st.subheader("📊 Greeks vs Stock Price")
+st.subheader("Greeks vs Stock Price")
 
 greeks_chart = plot_greeks_vs_stock(
     bs_model,
@@ -570,7 +570,7 @@ st.pyplot(
     width="stretch"
 )
 
-with st.expander("📋 View Greeks Values"):
+with st.expander("View Greeks Values"):
 
     greeks_values = bs_model.greeks()
 
@@ -681,7 +681,7 @@ def plot_3d_surface(bs_model, min_price, max_price, min_vol, max_vol, option="ca
 
 st.markdown("---")
 
-st.subheader("🌐 3D Option Price Surface")
+st.subheader("3D Option Price Surface")
 
 
 col1, col2 = st.columns(2)
