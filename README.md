@@ -1,4 +1,4 @@
-# 📊 Black-Scholes Option Pricing Model
+# Black-Scholes Option Pricing Model
 
 A Python-based interactive dashboard for pricing European options using the **Black-Scholes Model**.
 
@@ -6,7 +6,7 @@ The application allows users to explore option prices, visualize price sensitivi
 
 ---
 
-## 🌍 Live Demo
+## Live Demo
 
 Try the live application here:
 
@@ -14,7 +14,7 @@ Try the live application here:
 
 ---
 
-## 🚀 Features
+## Features
 
 ### Option Pricing
 - Calculate European **CALL** and **PUT** option prices
@@ -28,7 +28,7 @@ Try the live application here:
 
 ---
 
-## 🔥 Interactive Heatmaps
+## Interactive Heatmaps
 
 Visualize how option prices change with:
 
@@ -43,7 +43,7 @@ Includes:
 
 ---
 
-## 📈 Price Analysis
+## Price Analysis
 
 ### Option Price vs Stock Price
 
@@ -56,7 +56,7 @@ Includes:
 
 ---
 
-## 📊 Greeks Analysis
+## Greeks Analysis
 
 The application calculates and visualizes:
 
@@ -72,7 +72,7 @@ Features:
 
 ---
 
-## 🌐 3D Price Surface
+## 3D Price Surface
 
 Interactive 3D visualization showing:
 
@@ -86,37 +86,37 @@ Separate surfaces for:
 
 ---
 
-## 🧮 Mathematical Model
+## Mathematical Model
 
 The Black-Scholes model calculates option prices using:
 
 ### d1
 
-\[
+$$
 d_1 =
 \frac{
-\ln(\frac{S}{K})+(r+\frac{\sigma^2}{2})T
+\ln(\frac{S}{K})+\left(r+\frac{\sigma^2}{2}\right)T
 }
 {\sigma\sqrt{T}}
-\]
+$$
 
-### d2
+### d₂
 
-\[
+$$
 d_2=d_1-\sigma\sqrt{T}
-\]
+$$
 
 ### Call Price
 
-\[
+$$
 C=S N(d_1)-Ke^{-rT}N(d_2)
-\]
+$$
 
 ### Put Price
 
-\[
+$$
 P=Ke^{-rT}N(-d_2)-SN(-d_1)
-\]
+$$
 
 ---
 
