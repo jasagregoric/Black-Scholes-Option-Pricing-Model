@@ -123,7 +123,7 @@ class BlackScholes:
 
 
 with st.sidebar:
-    st.subheader("⚙️ Model Parameters")
+    st.subheader("Model Parameters")
 
     stock_price = st.number_input(
         "Stock Price (S)",
